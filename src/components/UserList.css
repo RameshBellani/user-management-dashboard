@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .load-more {
+    display: block;
+    margin: 20px auto;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* User List Styles */
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Displaying text and buttons side by side */
+  .user-item span {
+    font-size: 16px;
+    font-weight: 500;
+    flex-grow: 1;  /* Allow span to take all available space */
+    margin-right: 10px;
+  }
+  
+  /* Adjust button styles and align them horizontally */
+  .user-item button {
+    margin-left: 5px;
+    margin-top: 0;
+    display: inline-block;
+    padding: 8px 10px;
+  }
+  
+  /* Form Styling */
+  form {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input {
+    width: calc(100% - 24px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form button {
+    width: 100px;
+  }
+  
+  form button:first-child {
+    margin-right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .user-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .user-item button {
+      margin-top: 5px;
+    }
+  }
+  
